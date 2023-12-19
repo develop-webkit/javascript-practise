@@ -10,7 +10,9 @@
     <script>
         //           0   1   2   3   4   5   6
         let arr1 = ["a","b","c","d","e","f","g"];
-        let arr2 = [2,3,4,5]
+        let arr2 = [2,3,4,5];
+        let arr3 = [[[222,222,],[222,333]],[[333],[333]]];
+        let arr4 = "Apple";
         
         // let at = arr1.at(1);
         // console.log("at:",at,"value: 2");
@@ -21,23 +23,52 @@
         // let constructor = arr1.constructor();
         // console.log(constructor, "value: function Array(){native code}");
 
-        let copy = arr1.copyWithin(0,3,6);
-        console.log(arr1,"value: [d,e,f,d,e,f,g]");
+        // let copy = arr1.copyWithin(0,3,6);
+        // console.log(arr1,"value: [d,e,f,d,e,f,g]");
 
 
-//        let find = arr1.find(4)
-//        console.log(find,"value: 3")
+        // let entries = arr1.entries();
+        // for(item of entries){
+        //     console.log(item);
+        // }
+
+        // let every = arr2.every(everyFunction);
+        // function everyFunction(el,index,arr){
+        //     if(el === arr[0]){
+        //         return true
+        //     }else if (arr[index] > arr[index-1]){
+        //         return true
+        //     }
+        // }
+        // console.log(every)
+
+        // arr2.fill(55,1)
+        // console.log(arr2)
+        
+        // console.log(arr2.filter((el) => el >2));    
+
+        // console.log(arr2.findLast((el) => el < 3));
+        // runs test and check if all true return true if even one false return false
+        // filter give all the values after test
+        // find() give first value after test
+        // findIndex() retunr the index of the first true test
+        // 
+        // console.log(arr3.flat(2))
+        // let foreach = 0;
+        // arr2.forEach(forEachFunc);
+        // function forEachFunc(element){
+        //     if(element > 2){
+        //         foreach += element ;   
+        //     }
+        // }
+        // console.log(foreach);
+
+        // let arr = Array.from(arr4);
+        // console.log(arr);
+
+        
         /* 
-        copyWithin()
-        entries()
-        every()
-        fill()
-        filter()
-
-        findIndex()
-        flat()
         flatMap()
-        forEach()
         from()
         includes()
         indexOf()
