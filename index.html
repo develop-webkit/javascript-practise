@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resourses/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        //           0   1   2   3   4   5   6
-        let arr1 = ["a","b","c","d","e","f","g"];
-        let arr2 = [2,3,4,5];
-        let arr3 = [[[222,222,],[222,333]],[[333],[333]]];
-        let arr4 = "Apple";
-        let arr5 = "Apple+orange+pear";
-        
+        //           0   1   2   3   4   5    6    7   8 
+        // let arr1 = ["a", "b", "c", "d", "e", "f", "g","b"];
+        // let arr2 = [12, 3, 4, 5];
+        // let arr3 = [[222], [222], [333], [333]];
+        // let arr4 = "Apple";
+        // let arr5 = "Apple+orange+pear";
+
         // let at = arr1.at(1);
         // console.log("at:",at,"value: 2");
 
@@ -45,7 +47,7 @@
         // fill the array with 
         // arr2.fill(55,1)
         // console.log(arr2)
-        
+
         // console.log(arr2.filter((el) => el >2));    
 
         // console.log(arr2.findLast((el) => el < 3));
@@ -77,39 +79,106 @@
 
         //console.log(Array.isArray(arr4));
 
-        //join is used to convert array to string with seperate the item with the arrgument
+        // join is used to convert array to string with seperate the item with the arrgument
 
-        //console.log(arr3.join("+"));
-        
-        //console.log(arr1.lastIndexOf("b"));
+        // console.log(arr3.join("+"));
+
+        // console.log(arr1.lastIndexOf("b"));
         // keys return the interation of the array. for of 
-        const keys = Object.keys(arr1);
-        console.log(keys)
-        for(let i of keys){
-            console.log(i)
-        }
-        /* 
-        flatMap()
-        keys()
-        lastIndexOf()
-        length
-        map()
-        pop()
-        prototype
-        push()
+        // const keys = arr1.keys();
+        // console.log(keys)
+        // for (let i of keys) {
+        //     console.log(i)
+        // }
+        // console.log(arr1.lastIndexOf("b",6,1));
+        // index of search the array for a item given as argument and also take anther argument as where to start and another for where to end
+        // length return the length of the array
+        // console.log(arr5.length)
+        // let newArr = arr1.pop();
+        // console.log(arr1);
+        
+        // Array.prototype.decNumber = function(){
+        //     for(let i in this){
+        //         this[i] = --this[i];
+        //     }
+        // }
+
+        // Array.prototype.LowCase = function(){
+        //     for(let i of this){
+        //         this[this.indexOf(i)] = i.toUpperCase();
+        //     }
+        // }
+
+        // console.log(arr1);
+        // arr1.LowCase();
+        // console.log(arr1);
+        // prototype is type to make a new function for the array
+        // push add a item at the end of the array
+        // arr1.push("h");
+        // console.log(arr1);
+        // unshift add a item in the fist item
+        // arr1.unshift("Aplhabets:");
+        // console.log(arr1)        
+        // arr1.shift();
+        // console.log(arr1);
+        // let stringArr = arr1.toString();
+        // console.log(stringArr);
+        // let join = arr1.join("+");
+        // console.log(join)        
+        // let valueOf = arr1.valueOf();
+        // console.log(typeof valueOf.join("+"));        
+        // let slice = arr1.slice(2,5); // c d e
+        // console.log(arr1);    
+        //  console.log(arr1)
+        //  arr1.splice(7,1,"i");
+        //  console.log(arr1)
+        // splice take the array and rewrite to a new array taking 3 argument where to start removing, how many remove and how many add
+        // reverse array reverse the array 
+        // console.log(arr1);
+        // arr1.reverse();
+        // console.log(arr1);
+        //every() run test on all the el and return true all of them are true 
+        //some() run the test on all the el and return true of at least of the function return true
+        
+        // arr2 = arr2.sort((a,b) => b-a );
+        // console.log(arr1);
+        // console.log(arr2);
+
+        // arr2.forEach((element)=>{
+        //                     if(element > 3){return console.log(element)}}
+        //                 );
+        // arr3 = arr2.filter((element)=>{return element > 3});
+        // arr4 = arr2.map((element)=>{
+        //                     if(element > 3){return element}}
+        //                 );
+        // console.log(arr3);
+        // console.log(arr4);
+
+        // function myfunction(element){
+        //     return element * 2
+        // }
+
+        // arr1 = arr3.flatMap(myfunction);
+        // console.log(arr1)
+        
+        // function reduceFunc(a,b){
+        //     return a+b
+        // }
+
+        // arr3 = arr2.reduce(reduceFunc,1);
+        // console.log(arr3)
+        
+        // let arr = [1, 2, 3, 4, 5, 6, 7, 8]
+        // let newarr = [];
+        
+        // newarr = arr.reduce((Element,Element2)=>Element + Element2);
+        // console.log(newarr)
+        /*
         reduce()
         reduceRight()
-        reverse()
-        shift()
-        slice()
-        some()
-        sort()
-        splice()
-        toString()
-        unshift()
-        valueOf()
-        */  
+        */
     </script>
-<script src="resourses/js/javascript.js"></script>
+    <script src="resourses/js/javascript.js"></script>
 </body>
+
 </html>
